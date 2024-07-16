@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font);
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  transition: 0.5s;
+}
+
+/* JS CUSTOM SCROLL */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+header.shadow {
+  background: var(--bg-color);
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+header.shadow .navbar a {
+  color: var(--text-color);
+}
+/* ============= */
+
+section {
+  padding: 0 1.5rem;
+}
+
+/* BUTTON */
+.btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1.4rem 2.8rem;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+/* ================ */
+/* PADDING */
+
+/* Padding-top */
+.smPaddingTop {
+  padding-top: 2rem !important;
+}
+
+.mdPaddingTop {
+  padding-top: 4.5rem !important;
+}
+
+.bgPaddingTop {
+  padding-top: 25rem !important;
+}
+
+/* Padding-bottom */
+.smPaddingBott {
+  padding-bottom: 2rem !important;
+}
+
+.mdPaddingBott {
+  padding-bottom: 4.5rem !important;
+}
+
+.bgPaddingBott {
+  padding-bottom: 7rem !important;
+}
+
+/* ============== */
+/* OVERLAY */
+.overlay {
+  width: 100%;
+  min-height: 64rem;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(2, 3, 7, 0.452);
+}
+
+/* SOME VARIABLES */
+:root {
+  --main-color: #ff2c1f;
+  --main-font: "Poppins", sans-serif;
+  --text-color: #020307;
+  --bg-color: #fff;
+  --btn-hover: #fa1216;
+}
